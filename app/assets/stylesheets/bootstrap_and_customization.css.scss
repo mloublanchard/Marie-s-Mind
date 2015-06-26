@@ -16,6 +16,7 @@ $headings-color: 												#34495e;
 $headings-font-family:									lato;
 $font-family-sans-serif: 								'lato';
 $btn-primary-bg:												#f39c12;
+$btn-danger-bg:													#e74c3c;
 
 $jumbotron-heading-color:								#34495e;
 
@@ -28,3 +29,4 @@ $jumbotron-heading-color:								#34495e;
 }
 
 @import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
