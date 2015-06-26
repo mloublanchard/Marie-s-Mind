@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Pins</h1>
+
+<br>
+<%= link_to '+ New Pin', new_pin_path %>
+<br>
+
+<div class="row">
+
+      <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+      <div class="caption">
+  
+    <% @pins.each do |pin| %>
+      
+        <h3><%= pin.description %></h3>
+        <%= link_to 'Show', pin %>
+        <%= link_to 'Edit', edit_pin_path(pin) %>
+        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+  </div>
+  </div>
+  </div>
+  </div>
+
