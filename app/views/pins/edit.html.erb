@@ -9,8 +9,12 @@
 	</div>
 
 	<div class="panel-footer">
-	<%= link_to 'Show', @pin %> 
-	<%= link_to 'Back', pins_path %>
+	<%= link_to @pin do %>
+	<span class="glyphicon glyphicon-picture">Show</span>
+	<% end %> 
+	<%= link_to pins_path do %>
+	<span class="glyphicon glyphicon-arrow-left">Back</span>
+	<% end %>
 	</div>
 
 </div> <!-- Panel -->
